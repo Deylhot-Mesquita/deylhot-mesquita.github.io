@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="pt" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Deylhot – Perito Informático & Forense Digital</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Logótipo -->
+    <link rel="preload" href="logo.svg" as="image">
+</head>
+
+<body>
+
+<header>
+    <div class="nav">
+        <div class="logo">
+            <img src="logo.svg" alt="Logótipo DF" class="logo-img">
+            <span>Deylhot · Perito Informático</span>
+        </div>
+
+        <!-- Botão Dark/Light -->
+        <button class="theme-toggle" onclick="toggleTheme()">🌓</button>
+
+        <!-- Menu Desktop -->
+        <nav class="nav-links">
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#casos">Casos</a>
+            <a href="#recursos">Recursos</a>
+            <a href="#contacto" class="nav-cta">Contacto</a>
+        </nav>
+
+        <!-- Menu Mobile -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+
+    <nav id="mobileMenu" class="mobile-menu">
+        <a href="#inicio" onclick="toggleMenu()">Início</a>
+        <a href="#sobre" onclick="toggleMenu()">Sobre</a>
+        <a href="#servicos" onclick="toggleMenu()">Serviços</a>
+        <a href="#casos" onclick="toggleMenu()">Casos</a>
+        <a href="#recursos" onclick="toggleMenu()">Recursos</a>
+        <a href="#contacto" onclick="toggleMenu()">Contacto</a>
+    </nav>
+	
+</header>
+
+<main>
+<section class="hero-banner fade-in">
+    <div class="hero-content">
+        <h1>Bem-vindo ao meu portfólio</h1>
+        <p>Especialista IT • Redes • Segurança • Analise Computadores e Suporte</p>
+    </div>
+</section>
+
+<section id="inicio" class="fade-in">
+    <div class="grid-2">
+        <div>
+            <div class="pill">
+                <span class="pill-dot"></span>
+                Perito Informático & Forense Digital – CHFI | VMCE9
+            </div>
+
+            <h1>Prova digital com rigor, <span class="hero-highlight">clareza</span> e validade em tribunal.</h1>
+
+            <p class="tagline">
+                Apoio técnico a <strong>advogados, empresas, seguradoras e particulares</strong>.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#contacto"><button class="btn">Falar com o Perito</button></a>
+                <a href="#servicos"><button class="btn btn-outline">Ver serviços</button></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="sobre" class="fade-in delay-1">
+    <h2>Sobre o Perito</h2>
+    <p>
+        Sou o <strong>Deylhot</strong>, Perito Informático & Forense Digital, com mais de 25 anos de experiência.
+    </p>
+</section>
+
+<section id="servicos" class="fade-in delay-1">
+    <h2>Serviços</h2>
+    <div class="card-row">
+        <div class="card"><h3>Peritagens Informáticas</h3></div>
+        <div class="card"><h3>Análise Forense Digital</h3></div>
+        <div class="card"><h3>Deteção de Documentos Falsos</h3></div>
+        <div class="card"><h3>Recuperação de Dados</h3></div>
+    </div>
+</section>
+
+<section id="casos" class="fade-in delay-1">
+    <h2>Casos & Aplicações</h2>
+</section>
+
+<section id="recursos" class="fade-in delay-1">
+    <h2>Recursos</h2>
+</section>
+
+<section id="contacto" class="fade-in delay-1">
+    <h2>Contacto</h2>
+
+    <form action="https://formsubmit.co/Investigationchfi@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+
+        <label>Nome / Empresa</label>
+        <input type="text" name="nome" required>
+
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <label>Telefone</label>
+        <input type="text" name="telefone">
+
+        <label>Descrição do caso</label>
+        <textarea name="mensagem" required></textarea>
+
+        <button class="btn">Enviar</button>
+    </form>
+</section>
+
+</main>
+
+<footer>
+    © <span id="year"></span> Deylhot – Perito Informático & Forense Digital
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
